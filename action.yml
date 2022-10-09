@@ -7,9 +7,6 @@ inputs:
   destination_repo:
     description: 'Destination repository'
     required: true
-  destination_folder:
-    description: 'Directory to push the file to'
-    required: false
   user_email:
     description: 'Email for the git commit'
     required: true
@@ -24,12 +21,6 @@ inputs:
     required: false
   commit_message:
     description: 'A custom message for the commit'
-    required: false
-  rename:
-    description: 'Rename the destination file'
-    required: false
-  use_rsync:
-    description: 'Copy files/directories using rsync instead of cp. Experimental feature, please know your use case'
     required: false
   git_server:
     description: 'Git server host, default github.com'
